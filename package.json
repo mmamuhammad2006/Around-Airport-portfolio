@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "CHOKIDAR_USEPOLLING=true npm run watch",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^7.0",
+        "cssnano": "^7.0.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.21",
+        "popper.js": "^1.12",
+        "postcss": "^8.4.35",
+        "postcss-import": "^16.1.0",
+        "postcss-loader": "^7.3.3",
+        "postcss-preset-env": "^10.1.5",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.85.1",
+        "sass-loader": "^16.0.5",
+        "vue": "2.6.14",
+        "vue-loader": "^15.11.1",
+        "vue-template-compiler": "2.6.14"
+    },
+    "dependencies": {
+        "laravel-vue-pagination": "^2.3.1",
+        "vue-ctk-date-time-picker": "^2.5.0",
+        "vue-gallery-slideshow": "^1.5.2",
+        "vue-google-adsense": "^1.10.1",
+        "vue-multiselect-component": "^1.2.0",
+        "vue-script2": "^2.1.0"
+    }
+}
